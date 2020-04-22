@@ -13,5 +13,5 @@ ionic g service services/moveie
 # start server
 ionic serve
 
-#Start the LAB server
+# Start the LAB server
 ionic lab
