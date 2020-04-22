@@ -5,16 +5,17 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ionic serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "~8.2.14",
     "@angular/cli": "~8.3.23",
+    "@angular/common": "~8.2.14",
     "@angular/compiler": "~8.2.14",
     "@angular/compiler-cli": "~8.2.14",
     "@angular/core": "~8.2.14",
@@ -27,16 +28,15 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^5.0.0",
     "core-js": "^2.5.4",
+    "express": "^4.17.1",
     "pako": "^1.0.11",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
+    "typescript": "~3.4.3",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.803.20",
-    "@angular/cli": "~8.3.23",
-    "@angular/compiler": "~8.2.14",
-    "@angular/compiler-cli": "~8.2.14",
     "@angular/language-service": "~8.2.14",
     "@ionic/angular-toolkit": "^2.1.1",
     "@ionic/lab": "3.1.3",
@@ -53,8 +53,11 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "tslint": "~5.15.0"
+  },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.4.1"
   },
   "description": "An Ionic project"
 }
