@@ -15,3 +15,12 @@ ionic service
 
 #Start the LAB server
 ionic lab
+
+# added capacitor add android
+ionic capacitor add android
+
+# copy capacitor ( WWW) to android
+ionic capacitor copy android
+
+# capacitor run android
+ionic capacitor run android
