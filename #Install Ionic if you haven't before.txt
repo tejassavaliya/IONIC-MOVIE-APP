@@ -22,5 +22,5 @@ ionic capacitor add android
 # copy capacitor ( WWW) to android
 ionic capacitor copy android
 
-# capacitor run android
+# capacitor run android command
 ionic capacitor run android
