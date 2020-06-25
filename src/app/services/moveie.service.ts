@@ -15,7 +15,7 @@ export enum SearchType {
   providedIn: 'root'
 })
 export class MoveieService {
-  url = 'http://www.omdbapi.com/';
+  url = 'https://www.omdbapi.com/';
   apiKey = '2be398c0'
 
   constructor( private httpClient: HttpClient ) { }
